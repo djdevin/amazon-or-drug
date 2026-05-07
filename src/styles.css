@@ -70,11 +70,6 @@ html, body {
   color: transparent;
 }
 
-.title-icon {
-  font-size: 1.1em;
-  line-height: 1;
-}
-
 .title-or {
   color: var(--muted);
   font-weight: 500;

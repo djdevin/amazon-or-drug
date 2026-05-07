@@ -142,11 +142,9 @@ function Header() {
   return (
     <header className="title-bar">
       <h1 className="title">
-        <span className="title-icon" aria-hidden="true">📦</span>
         <span className="title-text">
           Amazon Seller <span className="title-or">or</span> Prescription Drug?
         </span>
-        <span className="title-icon" aria-hidden="true">💊</span>
       </h1>
       <p className="tagline">Half real medicine. Half shell company.</p>
     </header>
