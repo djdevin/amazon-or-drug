@@ -137,11 +137,6 @@ html, body {
   background: rgba(255, 255, 255, 0.03);
 }
 
-.choice:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.25);
-}
-
 .choice:active {
   transform: translateY(0);
 }
@@ -154,16 +149,23 @@ html, body {
   letter-spacing: 0.01em;
 }
 
-.choice-amazon:hover {
-  background: linear-gradient(180deg, rgba(255, 153, 0, 0.18), rgba(255, 153, 0, 0.05));
-  border-color: var(--amazon);
-  box-shadow: 0 10px 30px -12px rgba(255, 153, 0, 0.5);
-}
+@media (hover: hover) {
+  .choice:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
 
-.choice-drug:hover {
-  background: linear-gradient(180deg, rgba(78, 201, 255, 0.18), rgba(78, 201, 255, 0.05));
-  border-color: var(--drug);
-  box-shadow: 0 10px 30px -12px rgba(78, 201, 255, 0.5);
+  .choice-amazon:hover {
+    background: linear-gradient(180deg, rgba(255, 153, 0, 0.18), rgba(255, 153, 0, 0.05));
+    border-color: var(--amazon);
+    box-shadow: 0 10px 30px -12px rgba(255, 153, 0, 0.5);
+  }
+
+  .choice-drug:hover {
+    background: linear-gradient(180deg, rgba(78, 201, 255, 0.18), rgba(78, 201, 255, 0.05));
+    border-color: var(--drug);
+    box-shadow: 0 10px 30px -12px rgba(78, 201, 255, 0.5);
+  }
 }
 
 .choice.correct {
@@ -249,5 +251,7 @@ html, body {
   box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.7);
 }
 
-.play-again:hover { transform: translateY(-2px); }
+@media (hover: hover) {
+  .play-again:hover { transform: translateY(-2px); }
+}
 .play-again:active { transform: translateY(0); }

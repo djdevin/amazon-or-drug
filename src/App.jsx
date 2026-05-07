@@ -28,7 +28,7 @@ function endingFor(score, total) {
   if (pct >= 80) return { title: "Sharp eye.", blurb: "You can spot a vowel-stuffed shell company from a mile away." };
   if (pct >= 60) return { title: "Better than a coin flip.", blurb: "The line between gut-flora supplement and ergonomic chair brand is thin." };
   if (pct >= 40) return { title: "It's tricky out there.", blurb: "Modern branding has fully collapsed. Don't take it personally." };
-  return { title: "Rough round.", blurb: "Honestly though — what even is a Hiearcool?" };
+  return { title: "Rough round.", blurb: "Honestly though — what even is a Mrocioa?" };
 }
 
 export default function App() {
