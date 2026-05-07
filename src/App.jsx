@@ -96,6 +96,7 @@ export default function App() {
     const pct = Math.round((score / deck.length) * 100);
     return (
       <main className="stage">
+        <Header />
         <Hud score={score} streak={streak} round={deck.length} total={deck.length} />
         <section className="endcard">
           <h2>{title}</h2>
@@ -122,10 +123,11 @@ export default function App() {
 
   return (
     <main className="stage">
+      <Header />
       <Hud score={score} streak={streak} round={roundIndex + 1} total={deck.length} />
       <section className="card">
         <p className="prompt">What is it?</p>
-        <h1 key={roundIndex} className="word">{card.name}</h1>
+        <h2 key={roundIndex} className="word">{card.name}</h2>
         <div className="choices">
           <Choice answer="amazon" picked={picked} correctAnswer={card.answer} onClick={handleAnswer} icon="📦" label="Amazon Seller" />
           <Choice answer="drug" picked={picked} correctAnswer={card.answer} onClick={handleAnswer} icon="💊" label="Prescription Drug" />
@@ -133,6 +135,21 @@ export default function App() {
         <p className={`feedback ${feedbackTone}`}>{feedback}</p>
       </section>
     </main>
+  );
+}
+
+function Header() {
+  return (
+    <header className="title-bar">
+      <h1 className="title">
+        <span className="title-icon" aria-hidden="true">📦</span>
+        <span className="title-text">
+          Amazon Seller <span className="title-or">or</span> Prescription Drug?
+        </span>
+        <span className="title-icon" aria-hidden="true">💊</span>
+      </h1>
+      <p className="tagline">Half real medicine. Half shell company.</p>
+    </header>
   );
 }
 
