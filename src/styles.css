@@ -87,8 +87,8 @@ html, body {
 
 .prompt {
   margin: 0;
-  font-size: 13px;
-  letter-spacing: 0.22em;
+  font-size: 20px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
 }

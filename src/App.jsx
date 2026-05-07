@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { AMAZON_SELLERS, PRESCRIPTION_DRUGS } from "./data.js";
 
-const TOTAL_ROUNDS = 15;
+const TOTAL_ROUNDS = 10;
 
 function shuffle(arr) {
   const a = arr.slice();
@@ -124,7 +124,7 @@ export default function App() {
     <main className="stage">
       <Hud score={score} streak={streak} round={roundIndex + 1} total={deck.length} />
       <section className="card">
-        <p className="prompt">Is this an…</p>
+        <p className="prompt">What is it?</p>
         <h1 key={roundIndex} className="word">{card.name}</h1>
         <div className="choices">
           <Choice answer="amazon" picked={picked} correctAnswer={card.answer} onClick={handleAnswer} icon="📦" label="Amazon Seller" />
